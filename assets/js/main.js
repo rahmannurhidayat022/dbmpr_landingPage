@@ -167,7 +167,10 @@
 
   //hero carousel
   $(document).ready(() => {
-    $(".hero-carousel").owlCarousel();
+    $(".box-slider").owlCarousel({
+      autoplay: true,
+      dots: true,
+    });
   });
 
   // Clients carousel (uses the Owl Carousel library)
@@ -177,13 +180,17 @@
     loop: true,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
+        nav: true,
       },
-      768: {
-        items: 4,
+      600: {
+        items: 3,
+        nav: false,
       },
-      900: {
-        items: 6,
+      1000: {
+        items: 5,
+        nav: true,
+        loop: false,
       },
     },
   });
