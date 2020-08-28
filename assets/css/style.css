@@ -1684,7 +1684,7 @@ section {
   background: #fff;
   border-radius: 5px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  left: 2%;
+  right: 2%;
   bottom: 10%;
   background: #eee;
   transition: 3s;
@@ -1789,14 +1789,14 @@ section {
 #icon-chat {
   display: block;
   position: fixed;
-  left: 15px;
-  bottom: 15px;
+  right: 60px;
+  bottom: -4px;
   height: 0;
   z-index: 99;
 }
 
 #icon-chat .material-icons {
-  font-size: 30px;
+  font-size: 27px;
 }
 
 button:active {
