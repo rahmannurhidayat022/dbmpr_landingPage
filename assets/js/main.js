@@ -316,7 +316,7 @@ $(document).ready(function () {
     $(".close").click(function () {
       $("#chat").css("display", "none");
       $("#icon-chat").css({
-        "z-index": "9999",
+        "z-index": "99",
         opacity: "1",
       });
     });
