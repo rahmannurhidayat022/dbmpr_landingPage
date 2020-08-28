@@ -17,6 +17,16 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+    <!-- news bootstrap 4.5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -879,7 +889,61 @@
     <!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+    <a href="#" class="back-to-down"><i class="ri-arrow-down-line"></i></a>
     <div id="preloader"></div>
+    <!-- Layar Chatting -->
+    <div id="chat">
+      <div class="chat-header">
+        <img src="assets/img/chat/3945014.jpg" alt="admin" />
+      </div>
+      <div class="chat-body">
+        <div class="operator">
+          <div class="row">
+            <div class="col-2">
+              <div class="pp-admin">
+                <img src="assets/img/chat/admin.jpg" alt="admin pp" />
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="text-admin py-1 px-2">
+                <p>Hai saya admin,ada yang bisa saya bantu?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-writer">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-10 p-0 m-0">
+              <div class="input-group flex-nowrap">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="addon-wrapping">
+                    <label for="tab-write">
+                      <div class="material-icons">create</div>
+                    </label>
+                  </span>
+                </div>
+                <textarea class="form-control inputan" aria-label="With textarea" placeholder="Tulis pesan ..." id="tab-write"></textarea>
+              </div>
+            </div>
+            <div class="col-1 px-0 mx-1">
+              <div class="btn btn-warning send-message">Kirim</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="close">
+        <span class="material-icons"> highlight_off </span>
+      </button>
+    </div>
+
+    <section id="icon-chat">
+      <button class="btn btn-success pb-0 mb-0 px-2 chat-btn">
+        <div class="material-icons">chat</div>
+      </button>
+    </section>
+    <!-- End Layar Chatting -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
