@@ -165,31 +165,26 @@
     return false;
   });
 
-  // Back to down button
-  $(window).scroll(function () {
-    if ($(this).scrollTop() < 2500) {
-      $(".back-to-down").fadeIn("slow");
-    } else {
-      $(".back-to-down").fadeOut("slow");
-    }
-  });
-
-  $(".back-to-down").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 9999,
-      },
-      1500,
-      "easeInOutExpo"
-    );
-    return false;
-  });
-
   //hero carousel
+  $('.carousel').carousel({
+    touch: false,
+  })
   $(document).ready(() => {
     $(".box-slider").owlCarousel({
       autoplay: true,
       dots: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 5,
+        }
+      }
     });
   });
 
@@ -302,23 +297,13 @@ document.addEventListener("DOMContentLoaded", () => {
 //ketika btnChat di klik,akan menampilakan layar chatting
 
 $(document).ready(function () {
-  $("#icon-chat").click(function () {
-    $("#chat").toggle();
-    $("#icon-chat").css({
-      "z-index": "-1",
-      opacity: "0",
-    });
-  });
+  $('#icon-chat').click(e => {
+    $('#chat').toggleClass("open");
+    e.stopPropagation();
+  })
 
-  //close layar chatting
-
-  $(".close").ready(function () {
-    $(".close").click(function () {
-      $("#chat").css("display", "none");
-      $("#icon-chat").css({
-        "z-index": "99",
-        opacity: "1",
-      });
-    });
-  });
-});
+  $('main,header,#carouselExampleCaptions').click(e => {
+    $('#chat').removeClass("open");
+    e.stopPropagation();
+  })
+})
